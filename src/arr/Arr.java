@@ -1,6 +1,7 @@
 package arr;
 
 import java.util.ArrayList;
+import arrDto.Item;
 
 public class Arr {
 
@@ -37,8 +38,16 @@ public class Arr {
 			al.add(i);
 		}
 
-		// 값출력
+		// 객체 생성자 값입력 Class타입
 		System.out.println(al);
+		Item item = new Item(1, "17호");
+		System.out.println(item);
+		
+		// ArrayList객체 생성자 값입력
+		// new로 새로운 메모리 공간을 생성
+		ArrayList<Item> alItem = new ArrayList<Item>();
+		alItem.add(new Item(1, "insert to item name"));
+		System.out.println(alItem);
 		
 		
 		
